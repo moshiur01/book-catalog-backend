@@ -1,4 +1,5 @@
 import { Response } from 'express';
+import { Secret } from 'jsonwebtoken';
 
 type IApiReponse<T> = {
   statusCode: number;
@@ -10,6 +11,7 @@ type IApiReponse<T> = {
     total: number;
   };
   data?: T | null;
+  token?: T | null | Secret;
 };
 
 const sendResponse = <T>(res: Response, data: IApiReponse<T>): void => {
@@ -19,6 +21,7 @@ const sendResponse = <T>(res: Response, data: IApiReponse<T>): void => {
     message: data.message || null,
     meta: data.meta || null || undefined,
     data: data.data || null || undefined,
+    token: data.token || null || undefined,
   };
 
   res.status(data.statusCode).json(responseData);

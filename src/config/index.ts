@@ -13,9 +13,9 @@ export default {
   default_admin_pass: process.env.DEFAULT_ADMIN_PASS,
   bcrypt_salt_rounds: process.env.BCRYPT_SALT_ROUNDS,
   jwt: {
-    secret: process.env.JWT_SECRET,
-    refresh_secret: process.env.JWT_REFRESH_SECRET,
-    expires_in: process.env.JWT_EXPIRES_IN,
-    refresh_expires_in: process.env.JWT_REFRESH_EXPIRES_IN,
+    jwt_token: process.env.JWT_TOKEN,
+    jwt_token_expires_in: process.env.JWT_TOKEN_EXPIRES_IN,
+    jwt_refresh_token: process.env.JWT_REFRESH_TOKEN,
+    jwt_refresh_token_expires_in: process.env.JWT_REFRESH_TOKEN_EXPIRES_IN,
   },
 };
