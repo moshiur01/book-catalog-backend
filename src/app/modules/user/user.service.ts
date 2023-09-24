@@ -30,7 +30,35 @@ const getSingleUserFromDb = async (
   ]) as Partial<User>;
 };
 
+const updateUser = async (
+  id: string,
+  payload: Partial<User>
+): Promise<Partial<User>> => {
+  const isExist = prisma.user.findFirst({
+    where: {
+      id,
+    },
+  });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.OK, 'User not Found');
+  }
+
+  const result = await prisma.user.update({
+    where: {
+      id,
+    },
+    data: payload,
+  });
+  return excludeFields(result, [
+    'createdAt',
+    'updatedAt',
+    'password',
+  ]) as Partial<User>;
+};
+
 export const userService = {
   getAllFromDb,
   getSingleUserFromDb,
+  updateUser,
 };

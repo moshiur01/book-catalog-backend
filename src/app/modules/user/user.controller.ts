@@ -26,7 +26,19 @@ const getSingleUserFromDb = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateUser = catchAsync(async (req: Request, res: Response) => {
+  const result = await userService.updateUser(req.params.id, req.body);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'User updated successfully',
+    data: result,
+  });
+});
+
 export const userController = {
   getAllFromDb,
   getSingleUserFromDb,
+  updateUser,
 };
