@@ -17,7 +17,11 @@ const insertIntoDB = async (data: User): Promise<Partial<User>> => {
     data,
   });
 
-  return excludeFields(result, ['createdAt', 'updatedAt', 'password']);
+  return excludeFields(result, [
+    'createdAt',
+    'updatedAt',
+    'password',
+  ]) as Partial<User>;
 };
 
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
