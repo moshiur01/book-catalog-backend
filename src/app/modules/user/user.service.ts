@@ -57,8 +57,22 @@ const updateUser = async (
   ]) as Partial<User>;
 };
 
+const deleteUser = async (id: string): Promise<Partial<User>> => {
+  const result = await prisma.user.delete({
+    where: {
+      id,
+    },
+  });
+  return excludeFields(result, [
+    'createdAt',
+    'updatedAt',
+    'password',
+  ]) as Partial<User>;
+};
+
 export const userService = {
   getAllFromDb,
   getSingleUserFromDb,
   updateUser,
+  deleteUser,
 };
