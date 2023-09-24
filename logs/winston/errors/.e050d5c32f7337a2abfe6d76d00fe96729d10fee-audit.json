@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\.e050d5c32f7337a2abfe6d76d00fe96729d10fee-audit.json",
+  "files": [
+    {
+      "date": 1695548842553,
+      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-24-09-15-error.log",
+      "hash": "8541ac77675f437f21302b389b701f665197f1ba2eff375c2e8c5eee55336539"
     },
-    "auditLog": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\.e050d5c32f7337a2abfe6d76d00fe96729d10fee-audit.json",
-    "files": [
-        {
-            "date": 1695548842553,
-            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-24-09-15-error.log",
-            "hash": "8541ac77675f437f21302b389b701f665197f1ba2eff375c2e8c5eee55336539"
-        },
-        {
-            "date": 1695550214583,
-            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-24-09-16-error.log",
-            "hash": "49e1e16282c07eefea31119c740c0d9bfabdad16a2ae1663fa72ab44b18834b9"
-        },
-        {
-            "date": 1695575694666,
-            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-24-09-23-error.log",
-            "hash": "34c7d58949b2fc1d54020ecd3daacc9b1a6a1b104e3f622830e2039bb240374e"
-        },
-        {
-            "date": 1695578580055,
-            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-25-09-00-error.log",
-            "hash": "db8b67aeef40058114085fa56a07c43a2fe4e207caa9e6b8b5ca74b66c5af906"
-        },
-        {
-            "date": 1695584950803,
-            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-25-09-01-error.log",
-            "hash": "16203e1347a6efffeecab402ef3efc336161709e4340190173e0a0ec0d3c1b04"
-        },
-        {
-            "date": 1695585722604,
-            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-25-09-02-error.log",
-            "hash": "42a045e5d1d468486db625516963a429fe9029f50f8e7379cdc83ea876da0f31"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1695550214583,
+      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-24-09-16-error.log",
+      "hash": "49e1e16282c07eefea31119c740c0d9bfabdad16a2ae1663fa72ab44b18834b9"
+    },
+    {
+      "date": 1695575694666,
+      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-24-09-23-error.log",
+      "hash": "34c7d58949b2fc1d54020ecd3daacc9b1a6a1b104e3f622830e2039bb240374e"
+    },
+    {
+      "date": 1695578580055,
+      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-25-09-00-error.log",
+      "hash": "db8b67aeef40058114085fa56a07c43a2fe4e207caa9e6b8b5ca74b66c5af906"
+    },
+    {
+      "date": 1695584950803,
+      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-25-09-01-error.log",
+      "hash": "16203e1347a6efffeecab402ef3efc336161709e4340190173e0a0ec0d3c1b04"
+    },
+    {
+      "date": 1695585722604,
+      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-25-09-02-error.log",
+      "hash": "42a045e5d1d468486db625516963a429fe9029f50f8e7379cdc83ea876da0f31"
+    }
+  ],
+  "hashType": "sha256"
 }
