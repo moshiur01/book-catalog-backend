@@ -24,7 +24,21 @@ const getAllFromDb = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+const getSingleCategoryFromDb = catchAsync(
+  async (req: Request, res: Response) => {
+    const result = await categoryService.getSingleCategoryFromDb(req.params.id);
+
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Category  fetched successfully',
+      data: result,
+    });
+  }
+);
 export const categoryController = {
   insertIntoDb,
   getAllFromDb,
+  getSingleCategoryFromDb,
 };

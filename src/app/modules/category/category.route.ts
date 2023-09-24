@@ -6,6 +6,7 @@ import { categoryController } from './category.controller';
 const router = express.Router();
 
 router.get('/', categoryController.getAllFromDb);
+router.get('/:id', categoryController.getSingleCategoryFromDb);
 
 router.post('/', auth(ENUM_USER_ROLE.ADMIN), categoryController.insertIntoDb);
 
