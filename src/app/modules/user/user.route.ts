@@ -7,4 +7,10 @@ const router = express.Router();
 
 router.get('/', auth(ENUM_USER_ROLE.ADMIN), userController.getAllFromDb);
 
+router.get(
+  '/:id',
+  auth(ENUM_USER_ROLE.ADMIN),
+  userController.getSingleUserFromDb
+);
+
 export const UserRoutes = router;
