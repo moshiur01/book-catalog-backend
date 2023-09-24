@@ -10,6 +10,12 @@ const insertIntoDb = async (data: Category): Promise<Partial<Category>> => {
   return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Category>;
 };
 
+const getAllFromDb = async (): Promise<Category[] | Category> => {
+  const result = await prisma.category.findMany();
+
+  return excludeFields(result, ['createdAt', 'updatedAt']);
+};
 export const categoryService = {
   insertIntoDb,
+  getAllFromDb,
 };
