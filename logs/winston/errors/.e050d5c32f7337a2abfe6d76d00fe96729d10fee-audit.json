@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\.e050d5c32f7337a2abfe6d76d00fe96729d10fee-audit.json",
+    "files": [
+        {
+            "date": 1694061769464,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\errors\\phu-2023-07-09-10-error.log",
+            "hash": "85160021c9b66e467e1d917e2bddcb09cf0f5fd435790eaa549c08cef6855c70"
+        }
+    ],
+    "hashType": "sha256"
+}
