@@ -22,4 +22,72 @@ model User {
   profileImg String?
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
+
+  reviewAndRatings ReviewAndRating[]
+  orders           Order[]
+
+  @@map("users")
+}
+
+// Category Model
+model Category {
+  id        String   @id @default(uuid())
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  books Book[]
+
+  @@map("Categories")
+}
+
+// Book Model
+model Book {
+  id              String   @id @default(uuid())
+  title           String
+  author          String
+  price           Float
+  genre           String
+  publicationDate String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  //ref fields
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  reviewAndRatings ReviewAndRating[]
+
+  @@map("books")
+}
+
+// Review And Rating Model
+model ReviewAndRating {
+  id        String   @id @default(uuid())
+  review    String
+  rating    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  bookId String
+  book   Book   @relation(fields: [bookId], references: [id])
+
+  @@map("review_and_rating")
+}
+
+// Order Model
+model Order {
+  id           String   @id @default(uuid())
+  userId       String
+  orderedBooks Json
+  status       String   @default("pending")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("orders")
 }
