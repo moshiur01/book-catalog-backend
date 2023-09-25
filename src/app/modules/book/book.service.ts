@@ -104,7 +104,42 @@ const getAllFromDb = async (
   };
 };
 
+const getAllFromDbByCategory = async (
+  id: string,
+  options: IPaginationOptions
+) => {
+  const { size, page, skip } = paginationHelpers.calculatePagination(options);
+  const result = await prisma.book.findMany({
+    where: {
+      categoryId: id,
+    },
+    skip,
+    take: size,
+    orderBy:
+      options.sortBy && options.sortOrder
+        ? {
+            [options.sortBy]: options.sortOrder,
+          }
+        : {
+            createdAt: 'desc',
+          },
+  });
+  const total = await prisma.book.count({
+    where: {
+      categoryId: id,
+    },
+  });
+  return {
+    meta: {
+      total,
+      page,
+      size,
+    },
+    data: result,
+  };
+};
 export const bookService = {
   insertIntoDb,
   getAllFromDb,
+  getAllFromDbByCategory,
 };
