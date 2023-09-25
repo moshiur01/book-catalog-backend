@@ -14,9 +14,17 @@ router.post(
   auth(ENUM_USER_ROLE.ADMIN),
   bookController.insertIntoDb
 );
+
 router.patch(
   '/:id',
   auth(ENUM_USER_ROLE.ADMIN),
   bookController.updateOneFromDb
 );
+
+router.delete(
+  '/:id',
+  auth(ENUM_USER_ROLE.ADMIN),
+  bookController.deleteOneFromDb
+);
+
 export const bookRoutes = router;

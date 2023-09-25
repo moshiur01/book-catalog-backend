@@ -70,10 +70,22 @@ const updateOneFromDb = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const deleteOneFromDb = catchAsync(async (req: Request, res: Response) => {
+  const result = await bookService.deleteOneFromDb(req.params.id);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Book is deleted successfully',
+    data: result,
+  });
+});
+
 export const bookController = {
   insertIntoDb,
   getAllFromDb,
   getAllFromDbByCategory,
   getSingleFromDb,
   updateOneFromDb,
+  deleteOneFromDb,
 };
