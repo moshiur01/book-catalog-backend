@@ -4,6 +4,7 @@ import { bookController } from './book.controller';
 const router = express.Router();
 
 router.get('/', bookController.getAllFromDb);
+router.get('/:id', bookController.getSingleFromDb);
 router.get('/:id/category', bookController.getAllFromDbByCategory);
 
 router.post('/create-book', bookController.insertIntoDb);

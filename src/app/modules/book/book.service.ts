@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Book, Prisma } from '@prisma/client';
+import httpStatus from 'http-status';
+import ApiError from '../../../errors/ApiError';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
@@ -107,11 +109,14 @@ const getAllFromDb = async (
 const getAllFromDbByCategory = async (
   id: string,
   options: IPaginationOptions
-) => {
+): Promise<IGenericResponse<Partial<Book[]>>> => {
   const { size, page, skip } = paginationHelpers.calculatePagination(options);
   const result = await prisma.book.findMany({
     where: {
       categoryId: id,
+    },
+    include: {
+      category: true,
     },
     skip,
     take: size,
@@ -138,8 +143,22 @@ const getAllFromDbByCategory = async (
     data: result,
   };
 };
+
+const getSingleFromDb = async (id: string): Promise<Partial<Book | null>> => {
+  const result = await prisma.book.findUnique({
+    where: {
+      id,
+    },
+  });
+  if (result === null) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Book not Found');
+  }
+  return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Book>;
+};
+
 export const bookService = {
   insertIntoDb,
   getAllFromDb,
   getAllFromDbByCategory,
+  getSingleFromDb,
 };

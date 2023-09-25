@@ -6,7 +6,7 @@ export type IGenericResponse<T> = {
     size: number;
     total: number;
   };
-  data: T;
+  data: T | Partial<T>;
 };
 
 export type IGenericErrorResponse = {

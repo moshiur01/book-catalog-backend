@@ -48,8 +48,20 @@ const getAllFromDbByCategory = catchAsync(
   }
 );
 
+const getSingleFromDb = catchAsync(async (req: Request, res: Response) => {
+  const result = await bookService.getSingleFromDb(req.params.id);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Book fetched successfully',
+    data: result,
+  });
+});
+
 export const bookController = {
   insertIntoDb,
   getAllFromDb,
   getAllFromDbByCategory,
+  getSingleFromDb,
 };
