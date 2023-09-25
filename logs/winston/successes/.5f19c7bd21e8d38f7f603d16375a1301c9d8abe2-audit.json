@@ -1,80 +1,85 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\.5f19c7bd21e8d38f7f603d16375a1301c9d8abe2-audit.json",
-  "files": [
-    {
-      "date": 1695548842545,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-24-09-15-success.log",
-      "hash": "24b5470a177a0fec1d2f01cb9c7248ed6323cf56b223db22749be7b7a5d8e35e"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1695550214578,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-24-09-16-success.log",
-      "hash": "a6da1ad64d149128599240af945972fbbc5a583173e4528c1a2ac39ba846dae3"
-    },
-    {
-      "date": 1695575694658,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-24-09-23-success.log",
-      "hash": "5cd035b2e5150afd9f4755f4174760d4dcdf13607d9025ce870f23219330926c"
-    },
-    {
-      "date": 1695578580051,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-00-success.log",
-      "hash": "4fe8019e1dcb4a87b3cab34097329b8a9dd141840d481ba19c98e6533a76251c"
-    },
-    {
-      "date": 1695584950800,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-01-success.log",
-      "hash": "4fe8a6c5653082397aa1456ccd743961ad42f13be3e15c08682b8b16b3db4ae0"
-    },
-    {
-      "date": 1695585722601,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-02-success.log",
-      "hash": "5e385ed198b84ab807f2f83886ead4ddbcf29bbb0adf805241184db34e5541ca"
-    },
-    {
-      "date": 1695589200650,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-03-success.log",
-      "hash": "7aab661bb3812f042b6d2bb3e7e27ccff2bcf6a208bd3b9a8b7193bc156e3131"
-    },
-    {
-      "date": 1695611606309,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-09-success.log",
-      "hash": "8dd39bb4b4c0cf1e9d3934a2946546ec5f79e6a8be3b2b347fd3111793b82829"
-    },
-    {
-      "date": 1695614422297,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-10-success.log",
-      "hash": "c92ecff412d5a23b4c35e2619b8a70d6600efd3a8e0fa4cf18b154314692059c"
-    },
-    {
-      "date": 1695618350764,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-11-success.log",
-      "hash": "3b45caf4011847846161d678cc78edb4b59dafc07b0f4a1be91b179be5c6c92f"
-    },
-    {
-      "date": 1695621641339,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-12-success.log",
-      "hash": "efb87bcd37e7be0121a1fb35b7ef71b1d62077acfab51d051968fe0474c3a763"
-    },
-    {
-      "date": 1695625210508,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-13-success.log",
-      "hash": "5ecd1fa354aaa04f537c5ef1984a92064a4907a5167f887440ccee23aca1dd50"
-    },
-    {
-      "date": 1695630937896,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-14-success.log",
-      "hash": "7026cb63c4f71bcfe4b703752d99454a373c5fece3d82164dad18c41b2b4ac4d"
-    },
-    {
-      "date": 1695632473947,
-      "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-15-success.log",
-      "hash": "6ef670e748ea422b93d22918a426b321c6772c6432f3b468ddd9de1de75b0edc"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\.5f19c7bd21e8d38f7f603d16375a1301c9d8abe2-audit.json",
+    "files": [
+        {
+            "date": 1695548842545,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-24-09-15-success.log",
+            "hash": "24b5470a177a0fec1d2f01cb9c7248ed6323cf56b223db22749be7b7a5d8e35e"
+        },
+        {
+            "date": 1695550214578,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-24-09-16-success.log",
+            "hash": "a6da1ad64d149128599240af945972fbbc5a583173e4528c1a2ac39ba846dae3"
+        },
+        {
+            "date": 1695575694658,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-24-09-23-success.log",
+            "hash": "5cd035b2e5150afd9f4755f4174760d4dcdf13607d9025ce870f23219330926c"
+        },
+        {
+            "date": 1695578580051,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-00-success.log",
+            "hash": "4fe8019e1dcb4a87b3cab34097329b8a9dd141840d481ba19c98e6533a76251c"
+        },
+        {
+            "date": 1695584950800,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-01-success.log",
+            "hash": "4fe8a6c5653082397aa1456ccd743961ad42f13be3e15c08682b8b16b3db4ae0"
+        },
+        {
+            "date": 1695585722601,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-02-success.log",
+            "hash": "5e385ed198b84ab807f2f83886ead4ddbcf29bbb0adf805241184db34e5541ca"
+        },
+        {
+            "date": 1695589200650,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-03-success.log",
+            "hash": "7aab661bb3812f042b6d2bb3e7e27ccff2bcf6a208bd3b9a8b7193bc156e3131"
+        },
+        {
+            "date": 1695611606309,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-09-success.log",
+            "hash": "8dd39bb4b4c0cf1e9d3934a2946546ec5f79e6a8be3b2b347fd3111793b82829"
+        },
+        {
+            "date": 1695614422297,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-10-success.log",
+            "hash": "c92ecff412d5a23b4c35e2619b8a70d6600efd3a8e0fa4cf18b154314692059c"
+        },
+        {
+            "date": 1695618350764,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-11-success.log",
+            "hash": "3b45caf4011847846161d678cc78edb4b59dafc07b0f4a1be91b179be5c6c92f"
+        },
+        {
+            "date": 1695621641339,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-12-success.log",
+            "hash": "efb87bcd37e7be0121a1fb35b7ef71b1d62077acfab51d051968fe0474c3a763"
+        },
+        {
+            "date": 1695625210508,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-13-success.log",
+            "hash": "5ecd1fa354aaa04f537c5ef1984a92064a4907a5167f887440ccee23aca1dd50"
+        },
+        {
+            "date": 1695630937896,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-14-success.log",
+            "hash": "7026cb63c4f71bcfe4b703752d99454a373c5fece3d82164dad18c41b2b4ac4d"
+        },
+        {
+            "date": 1695632473947,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-15-success.log",
+            "hash": "6ef670e748ea422b93d22918a426b321c6772c6432f3b468ddd9de1de75b0edc"
+        },
+        {
+            "date": 1695636271263,
+            "name": "E:\\P HERO LEVEL 2\\mission 06 Be a SQL Superstar\\assignment-08\\Build-a-Book-Catallog-Backend\\logs\\winston\\successes\\phu-2023-25-09-16-success.log",
+            "hash": "bad92d6df860136514839a2f19c4b167964ba3176fc6f666e866106e9e1d26fe"
+        }
+    ],
+    "hashType": "sha256"
 }
