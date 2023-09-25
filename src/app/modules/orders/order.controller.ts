@@ -41,7 +41,22 @@ const getAllFromDb = catchAsync(async (req: Request, res: Response) => {
   }
 });
 
+const getSingleOrderFromDb = catchAsync(async (req: Request, res: Response) => {
+  const result = await orderService.getSingleOrderFromDb(
+    req.user,
+    req.params.id
+  );
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Order fetched successfully',
+    data: result,
+  });
+});
+
 export const orderController = {
   insertIntoDb,
   getAllFromDb,
+  getSingleOrderFromDb,
 };

@@ -64,7 +64,34 @@ const getAllFromDb = async (user: any): Promise<Order[] | Order> => {
   }
 };
 
+const getSingleOrderFromDb = async (
+  user: any,
+  orderId: string
+): Promise<Partial<Order>> => {
+  const { role, id } = user;
+
+  const result = await prisma.order.findUnique({
+    where: {
+      id: orderId,
+    },
+  });
+
+  if (!result) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Order not found');
+  }
+
+  if (role === ENUM_USER_ROLE.ADMIN || id === result.userId) {
+    return excludeFields(result, ['updatedAt']) as Partial<Order>;
+  } else {
+    throw new ApiError(
+      httpStatus.UNAUTHORIZED,
+      'User is not authorized to see the order details'
+    );
+  }
+};
+
 export const orderService = {
   insertIntoDb,
   getAllFromDb,
+  getSingleOrderFromDb,
 };
