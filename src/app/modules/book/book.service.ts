@@ -156,9 +156,31 @@ const getSingleFromDb = async (id: string): Promise<Partial<Book | null>> => {
   return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Book>;
 };
 
+const updateOneFromDb = async (id: string, payload: Partial<Book>) => {
+  const isExist = await prisma.book.findUnique({
+    where: {
+      id,
+    },
+  });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.OK, 'Book not Found');
+  }
+
+  const result = await prisma.book.update({
+    where: {
+      id,
+    },
+    data: payload,
+  });
+
+  return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Book>;
+};
+
 export const bookService = {
   insertIntoDb,
   getAllFromDb,
   getAllFromDbByCategory,
   getSingleFromDb,
+  updateOneFromDb,
 };

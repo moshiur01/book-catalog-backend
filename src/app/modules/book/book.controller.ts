@@ -59,9 +59,21 @@ const getSingleFromDb = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateOneFromDb = catchAsync(async (req: Request, res: Response) => {
+  const result = await bookService.updateOneFromDb(req.params.id, req.body);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Book updated successfully',
+    data: result,
+  });
+});
+
 export const bookController = {
   insertIntoDb,
   getAllFromDb,
   getAllFromDbByCategory,
   getSingleFromDb,
+  updateOneFromDb,
 };
