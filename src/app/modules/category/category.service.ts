@@ -37,8 +37,32 @@ const getSingleCategoryFromDb = async (
   return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Category>;
 };
 
+const updateCategory = async (
+  id: string,
+  payload: Partial<Category>
+): Promise<Partial<Category>> => {
+  const isExist = prisma.category.findFirst({
+    where: {
+      id,
+    },
+  });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.OK, 'Category not Found');
+  }
+
+  const result = await prisma.category.update({
+    where: {
+      id,
+    },
+    data: payload,
+  });
+  return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Category>;
+};
+
 export const categoryService = {
   insertIntoDb,
   getAllFromDb,
   getSingleCategoryFromDb,
+  updateCategory,
 };

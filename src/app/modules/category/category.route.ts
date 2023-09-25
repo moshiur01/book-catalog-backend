@@ -8,6 +8,16 @@ const router = express.Router();
 router.get('/', categoryController.getAllFromDb);
 router.get('/:id', categoryController.getSingleCategoryFromDb);
 
-router.post('/', auth(ENUM_USER_ROLE.ADMIN), categoryController.insertIntoDb);
+router.post(
+  '/:id',
+  auth(ENUM_USER_ROLE.ADMIN),
+  categoryController.insertIntoDb
+);
+
+router.patch(
+  '/:id',
+  auth(ENUM_USER_ROLE.ADMIN),
+  categoryController.updateCategory
+);
 
 export const categoryRoutes = router;
