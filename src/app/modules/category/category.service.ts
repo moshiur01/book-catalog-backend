@@ -59,10 +59,19 @@ const updateCategory = async (
   });
   return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Category>;
 };
+const deleteCategory = async (id: string): Promise<Partial<Category>> => {
+  const result = await prisma.category.delete({
+    where: {
+      id,
+    },
+  });
+  return excludeFields(result, ['createdAt', 'updatedAt']) as Partial<Category>;
+};
 
 export const categoryService = {
   insertIntoDb,
   getAllFromDb,
   getSingleCategoryFromDb,
   updateCategory,
+  deleteCategory,
 };
